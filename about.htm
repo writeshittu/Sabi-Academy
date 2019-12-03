@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="aboutus.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.htm">SABI<span class="logo">A</span>CADEMY</a>
+      <ul>
+        <li><select name="lang" id="lang">
+          <option value="">Language</option>
+          <option value="eng">English</option>
+           <option value="hausa">Hausa</option>
+           <option value="Ibo">Igbo</option>
+           <option value="Yor">Yoruba</option>
+         </select>
+      </li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.htm">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.htm">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.htm">Blog</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="signup.htm"> Sign Up</a></li>
+          <li class="nav-item"><button style="border:0" class="bg-dark nav-link" onclick="openForm()"> Login</button></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- hidden login form -->
+  <div class="form-popup" id="myForm">
+    <form action="#" class="form-container">
+      <span type="button" class="cancel" onclick="closeForm()">X</span><h1>Login</h1>
+      <div class="social">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+    <label for="email"><b>Email or Username`</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <p><strong><a href="signup.htm">NEED AN ACCOUNT?</a></strong></p>
+    
+  </form>
+  </div>
+          <!--navbar ends here-->
+    <div class="container" style="margin-top:80px">
+      <div class="row col-12">
+       <h4 style="color:darkred">Who we are</h4> <hr>
+        <p>Team Achievers comprises a group of young tech enthusiasts driven to causing disruptive change in Nigeria's education sector. 
+            This is rooted in the belief that an excellent education is the catalyst for a nation's growth and development.</p>
+        
+        <h4 style="color:darkred">Our Vision</h4> <hr>
+        <p>To utilize technology as a resource tool in providing quality education to children living in low-income communities. So as to
+          ensure holistic growth through affordable quality education regardless of their geographical location.
+        </p>
+        <h4 style="color:darkred">Our Intervention</h4> <hr>
+        <p>Sabi Academy leverages on technology to deliver quality education to children living in low-income communities. 
+            It is a learning environment that facilitates access to an excellent education for children at the primary school level. We engineer this process by engaging visual, 
+            audio-visual and Kinesthetic approach in content delivery to the learners learning on our platform. 
+            All learning content is geared towards facilitating learning of 21st century skills which comprises critical thinking, creativity,
+            collaboration and communication.
+            Sabi Academy uniquely translates all learning content to Nigeria's three major ethnic languages which are Igbo,Yoruba and Hausa.
+        </p>
+      </div>
+    </div>
+    <!-- meet the team -->
+      <div class="container col-container"> 
+        
+      <h3 class="text-center mt-3" style="color:darkred"> Meet The Team</h3> <hr>
+          
+      <br>
+
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/nene.jpg" alt="nene" style="width:100%">
+      <div class="container">
+        <h2>Nene</h2>
+        <p class="title">Educator & Co-Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nene@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/asd.jpg" alt="akm" style="width:100%">
+      <div class="container">
+        <h2>Shittu</h2>
+        <p class="title">Geologist & <Co-founder></Co-founder></p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>writeshittu@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/babs.jpg" alt="babs" style="width:100%">
+      <div class="container">
+        <h2> Engr. Babatunde</h2>
+        <p class="title">Co-founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>babs@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/chukwu.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Somtochukwu</h2>
+        <p class="title">Educator & Co-Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>chukwu@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/vero.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Lady Veronica</h2>
+        <p class="title">Co-founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>vero@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/img_avatar1.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Engr.  Ayomide</h2>
+        <p class="title">Co-founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+        <!-- Footer -->
+  <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+</body>
+</html>

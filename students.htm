@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SabiAcademy</title>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="student.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.htm">SABI<span class="logo">A</span>CADEMY</a>
+      <ul>
+        <li><select name="lang" id="lang">
+          <option value="">Language</option>
+          <option value="eng">English</option>
+           <option value="hausa">Hausa</option>
+           <option value="Ibo">Igbo</option>
+           <option value="Yor">Yoruba</option>
+         </select>
+      </li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.htm">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.htm">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.htm">Blog</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="signup.htm"> Sign Up</a></li>
+          <li class="nav-item"><button style="border:0" class="bg-dark nav-link" onclick="openForm()"> Login</button></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- hidden login form -->
+  <div class="form-popup" id="myForm">
+    <form action="#" class="form-container">
+        <span type="button" class="cancel" onclick="closeForm()">X</span><h1>Login</h1>
+        <div class="social">
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+           </a>
+          <a href="#" class="twitter btn">
+            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+          </a>
+          <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+            </i> Login with Google+
+          </a>
+        </div>
+  
+      <label for="email"><b>Email or Username</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn">Login</button>
+      <p><strong><a href="signup.htm">NEED AN ACCOUNT?</a></strong></p>
+      
+    </form>
+  </div>
+
+        <div class="container grd">
+                <div class="row ">
+                        <div class="column grd-1" style="background-color:rgb(17, 17, 93);color:white;padding:25px;">
+                            <h4 class="text-center py-3 mt-3">Quality education for anyone, anywhere.</h4>
+                          <p>Join sabi Academy to get personalized help with what you’re studying or to learn something completely new.
+                            We’ll save all of your progress.</p>
+                           <p> By signing up for Sabi Academy, you agree to our <i class="fab fa-highlighter">Terms of use</i>  and
+                              <i class="mdi mdi-format-color-highlight:">Privacy Policy.</i></p>
+                        </div>
+                        <div class="column grd-2" style="background-color:#fff;">
+                          <h4 class="py-4 mt-3">Join Sabi<span class="logo">A</span>cademy as a</h4>
+                          <div class="btn-group" id="myDiv">
+                                <button class="btn active"><a href="#" data-toggle="popover" data-trigger="focus" data-content="Input your date of birthday to continue">STUDENT</a> </button>
+                                <button onclick="openForm()">TEACHER</button>
+                                <button onclick="openForm()">PARENT</button>
+                          </div>
+                          <p class="py-3"> <strong>What is your date of birth?</strong> </p>
+                           <form class="form mt-3" action="#">
+                            <input type="date" id="bddate" placeholder="Day" value="date">
+                          </form><br>
+                          <p><strong><a href="#">Enter class code</a></strong></p>
+                          <p><strong><a href="#"  onclick="openForm()"> Already have an account?</a></strong></p>
+
+                         
+                        </div>
+                      </div>
+        </div>
+
+  
+    <!-- Footer -->
+  <footer class="py-2 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; sabi<span class="logo" >A</span>cademy 2019</p>
+        </div>
+        <!-- /.container -->
+      </footer>
+
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+  <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <script>
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("myDiv");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+              });
+            }
+            </script>
+            <script>
+              $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();   
+              });
+              </script>
+
+</body>
+</html>

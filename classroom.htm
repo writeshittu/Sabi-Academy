@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html class=""> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="class.css">
+    </head>
+    <body>
+      <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.htm">SABI<span class="logo">A</span>CADEMY</a>
+      <ul>
+        <li><select name="lang" id="lang">
+          <option value="">Language</option>
+          <option value="eng">English</option>
+           <option value="hausa">Hausa</option>
+           <option value="Ibo">Igbo</option>
+           <option value="Yor">Yoruba</option>
+         </select>
+      </li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.htm">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.htm">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.htm">Blog</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="signup.htm"> Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.htm"> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+          <!--navbar ends here-->
+          <h1 class="text-center" style="margin-top:80px">Hello!, Please select your class here we </h1>
+
+          <div class="tab">
+            <button type="button" class="tablinks btn btn-info" onclick="openCity(event, 'primary1')" id="defaultOpen">Primary <span class="badge">1</span></button>
+            <button type="button" class="tablinks btn btn-info" onclick="openCity(event, 'primary1')" id="defaultOpen">Primary <span class="badge">2</span></button>
+            <button type="button" class="tablinks btn btn-info" onclick="openCity(event, 'primary1')" id="defaultOpen">Primary <span class="badge">3</span></button>
+            <button type="button" class="tablinks btn btn-info" onclick="openCity(event, 'primary1')" id="defaultOpen">Primary <span class="badge">4</span></button>
+            <button type="button" class="tablinks btn btn-info" onclick="openCity(event, 'primary1')" id="defaultOpen">Primary <span class="badge">5</span></button>
+            <button type="button" class="tablinks btn btn-info" onclick="openCity(event, 'primary1')" id="defaultOpen">Primary <span class="badge">6</span></button>
+            <button type="button" class="tablinks btn btn-info" onclick="openCity(event, 'primary1')" id="defaultOpen">Primary <span class="badge">7</span></button>
+            
+          </div>
+          
+          <div id="primary1" class="tabcontent">
+              <div >    
+                  <h2>Available Contents</h2><br>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <img src="https://placehold.it/150x80?text=MP4" class="img-responsive" style="width:100%" alt="Image">
+                      <p>CLASS TUTORIALS</p>
+                    </div>
+                    <div class="col-sm-3"> 
+                      <img src="https://placehold.it/150x80?text=PDF" class="img-responsive" style="width:100%" alt="Image">
+                      <p>BASIC SCIENCES</p>
+                    </div>
+                    <div class="col-sm-3"> 
+                      <img src="https://placehold.it/150x80?text=PDF" class="img-responsive" style="width:100%" alt="Image">
+                      <p>LANGUAGES</p>
+                    </div>
+                    <div class="col-sm-3">
+                      <img src="https://placehold.it/150x80?text=ARTWORK" class="img-responsive" style="width:100%" alt="Image">
+                      <p>CREATIVE ART</p>
+                    </div>
+                  </div>
+                </div><br>
+          </div>
+        
+          
+          <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          </script>         
+  </body>
+</html> 
+                        

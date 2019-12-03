@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SabiAcademy</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.htm">SABI<span class="logo">A</span>CADEMY</a>
+      <ul>
+        <li><select name="lang" id="lang">
+          <option value="">Language</option>
+          <option value="eng">English</option>
+           <option value="hausa">Hausa</option>
+           <option value="Ibo">Igbo</option>
+           <option value="Yor">Yoruba</option>
+         </select>
+      </li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.htm">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.htm">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.htm">Blog</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="signup.htm"> Sign Up</a></li>
+          <li class="nav-item"><button style="border:0" class="bg-dark nav-link" onclick="openForm()"> Login</button></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- hidden login form -->
+  <div class="form-popup" id="myForm" id="overlay">
+    <form action="#" class="form-container">
+      <span type="button" class="cancel" onclick="closeForm()">X</span><h1>Login</h1>
+      <div class="social">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+    <label for="email"><b>Email or Username</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <p><strong><a href="signup.htm">NEED AN ACCOUNT?</a></strong></p>
+    
+  </form>
+  </div>
+  
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-3 mb-1">SABI<span class="logo-2">A</span>CADEMY</h1>
+          <p class="lead mb-3 text-white-20"style="font-style:italic; color:white"> Bridging educational gaps in low-income communities...</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>What We Do</h2>
+        <hr>
+        <p>Sabi Academy leverages on technology to deliver quality education to children living in low-income communities.
+          It is a learning environment that facilitates access to excellent education for children at the primary school level.
+          We engineer this process by engaging visual, audio-visual and kinesthetic approach in content delivery to the learners on our platform.
+          Geared towards facilitating learning of 21st century skills which comprises critical thinking, creativity, collaboration and communication.
+          Sabi Academy uniquely translates all learning content to Nigeria’s three major ethnic languages which are Yoruba, Igbo and Hausa.</p>
+        <a class="btn btn-primary btn-lg" href="students.htm">GET STARTED &raquo;</a>
+      </div>
+      <div class="col-md-4 mb-5">
+          <h2>Contact Us</h2>
+        <hr>
+        <address>
+          <strong>Head office:</strong> <br>
+            No 18 Achievers Estate,<br>
+             Lekki Lagos. <br>
+            Tel:<a href="#"> <span class="glyphicon glyphicon-earphone"></span> +2341234567891</a></span> 
+        </address>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/150x80?text=STUDENT" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Every child deserves the chance to learn.</h4>
+            <p class="card-text">66% of children enrolled in primary schools in Nigeria are not learning(UNICEF, 2013).
+              Sabi Academy leverages on technology to deliver quality education to children 
+              </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/150x80?text=TEACHER" alt="">
+          <div class="card-body">
+            <h4 class="card-title" >Engage every students with our latest learning contents</h4>
+            <p class="card-text">We empower teachers to support their entire classroom. 90% of Nigeria teachers 
+              who have used Sabi Academy have found us effective.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/150x80?text=PARENT" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Giving your ward a better tomorrow</h4>
+            <p class="card-text">Our mission is to provide a free, world-class education to anyone, anywhere.On Sabi Academy, your child 
+              can access a wealth of educational content with your approval</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <section style="background-color:azure">
+    <div class="page-header" id="contact">
+        <h2>Contact Us.</h2>
+    </div>
+  <div class="row">
+        <div class="col-lg-4 text-center">
+            <p>Send us a message, or contact us from the address below</p>
+            <address>
+              <strong>Head office:</strong> <br>
+                No 18 Achievers Estate,<br>
+                 Lekki Lagos. <br>
+                Tel:<a href="#"> <span class="glyphicon glyphicon-earphone"></span> +2341234567891</a></span> 
+            </address>
+        </div>
+        <div class="col-lg-6">
+            <form action="#" class="form-horizontal">
+                <div class="form-group">
+                    <label for="user-name" class="col-lg-2 control-label">Name</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control" id="user-name" placeholder="Enter you name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="user-email" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="user-message" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-8">
+                        <textarea name="user-message" id="user-message" class="form-control" cols="10" rows="5" placeholder="Enter your Message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-10 col-lg-offset-2">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+            </form>
+        </div>
+          <div class="col-lg-2">
+          <h4>DONATION</h4>
+            <button style="padding:16px;" class="bg-primary" type="submit">CLICK HERE</button>
+          </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="py-2 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; sabi<span class="logo" >A</span>cademy 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    
+
+</body>
+
+</html>
