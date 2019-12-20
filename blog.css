@@ -29,7 +29,7 @@
     height: 550px; 
     align-content: center;
 }
-footer{
+footr{
   background-color: azure
 }
 /* login style */
@@ -43,7 +43,7 @@ border: 3px solid #f1f1f1;
 z-index: 9;
 }
 
-/* styles to the form container */
+/* styles to the login form container */
 .form-container {
   max-width: 400px;
   height: 40%;
@@ -97,4 +97,40 @@ z-index: 9;
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+/* newsletter */
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+  width: max-content;
+}
+
+.news {
+  padding: 20px;
+  background-color: azure;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #0062cc;
+  color: white;
+  border: none;
+  width: fit-content;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
 }

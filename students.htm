@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.htm">About</a>
+            <a class="nav-link" href="about.htm">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="blog.htm">Blog</a>
@@ -80,7 +80,7 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
   
-      <button type="submit" class="btn">Login</button>
+      <button type="submit"  onClick="location.href='dash.htm'" class="btn">Login</button>
       <p><strong><a href="signup.htm">NEED AN ACCOUNT?</a></strong></p>
       
     </form>
@@ -105,8 +105,9 @@
                           <p class="py-3"> <strong>What is your date of birth?</strong> </p>
                            <form class="form mt-3" action="#">
                             <input type="date" id="bddate" placeholder="Day" value="date">
+                            <a type="submit" id="myBtn" onclick="javascript:alert('You’re under 14 and we think that’s awesome, but we need to notify a caregiver of your account.!')"  href='login.htm' class="btn btn-primary">Submit</a>
                           </form><br>
-                          <p><strong><a href="#">Enter class code</a></strong></p>
+                          
                           <p><strong><a href="#"  onclick="openForm()"> Already have an account?</a></strong></p>
 
                          

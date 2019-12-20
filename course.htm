@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Courses</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="blog.css" rel="stylesheet">
+        <style>
+          /* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  
+}
+.space{
+  margin-top: 90px;
+}
+
+.containerTab {
+  padding: 20px;
+  color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+       <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.htm">SABI<span class="logo">A</span>CADEMY</a>
+      <ul>
+        <li><select name="lang" id="lang">
+          <option value="">Language</option>
+          <option value="eng">English</option>
+           <option value="hausa">Hausa</option>
+           <option value="Ibo">Igbo</option>
+           <option value="Yor">Yoruba</option>
+         </select>
+      </li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.htm">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.htm">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="course.htm">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.htm">Blog</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="signup.htm"> Sign Up</a></li>
+          <li class="nav-item"><button style="border:0" class="bg-dark nav-link" onclick="openForm()"> Login</button></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- hidden login form -->
+  <div class="form-popup" id="myForm" id="overlay">
+    <form action="#" class="form-container">
+      <span type="button" class="cancel" onclick="closeForm()">X</span><h1>Login</h1>
+      <div class="social">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+    <label for="email"><b>Email or Username</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <p><strong><a href="signup.htm">NEED AN ACCOUNT?</a></strong></p>
+    
+  </form>
+  </div>
+
+        <div class="container-fluid space">
+            <div style="text-align:center">
+                
+                <p>Click on the applicable below:</p>
+              </div>
+              
+              <!-- Three columns -->
+              <div class="row">
+                <div class="column" onclick="openTab('b1');" style="background:#4da6ff;">
+                  Basic 1
+                </div>
+                <div class="column" onclick="openTab('b2');" style="background:#99ccff;">
+                  Basic 2
+                </div>
+                <div class="column" onclick="openTab('b3');" style="background:#66b3ff;">
+                  Basic 3
+                </div>
+                <div class="column" onclick="openTab('b4');" style="background: #3399ff;">
+                  Basic 4 
+                </div>
+                <div class="column" onclick="openTab('b5');" style="background:#1a8cff;">
+                  Basic 5
+                </div>
+              </div>
+              
+              <!-- Full-width columns: (hidden by default) -->
+              <div id="b1" class="containerTab" style="display:none;background:#e0e0d1">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Basic 1</h2>
+                <p class="btn-link"> Math</p>
+                <p class="btn-link"> Verbal Reasoning</p>
+                <p class="btn-link"> Basic Science</p>
+                <p class="btn-link"> Social studies</p>
+                <p class="btn-link"> Civil Education</p>
+                <p class="btn-link"> PHE</p>
+                <p class="btn-link"> Music</p>
+                <p class="btn-link"> Poem</p>
+                <p class="btn-link"> Creative Arts</p>
+              </div>
+              
+              <div id="b2" class="containerTab" style="display:none;background:#e0e0d1">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Basic 2</h2>
+                <p class="btn-link">English</p>
+                  <p class="btn-link"> Math</p>
+                  <p class="btn-link"> Verbal Reasoning</p>
+                  <p class="btn-link"> Civil Education</p>
+                  <p class="btn-link"> PHE</p>
+                  <p class="btn-link"> Music</p>
+                  <p class="btn-link"> Basic Science</p>
+                  <p class="btn-link"> Social studies</p>
+                  <p class="btn-link"> Poem</p>
+                  <p class="btn-link"> Creative Arts</p></p>
+              </div>
+              
+              <div id="b3" class="containerTab" style="display:none;background:#e0e0d1">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Basic 3</h2>
+                <p class="btn-link"> Math</p>
+                <p class="btn-link"> Verbal Reasoning</p>
+                <p class="btn-link">English</p>
+                  <p class="btn-link"> Basic Science</p>
+                  <p class="btn-link"> Social studies</p>
+                  <p class="btn-link"> Civil Education</p>
+                  <p class="btn-link"> PHE</p>
+                  <p class="btn-link"> Music</p>
+                  <p class="btn-link"> Poem</p>
+                  <p class="btn-link"> Creative Arts</p></p>
+              </div>
+              <div id="b4" class="containerTab" style="display:none;background:#e0e0d1">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Basic 4</h2>
+                <p class="btn-link">English</p>
+                <p class="btn-link"> Math</p>
+                <p class="btn-link"> Verbal Reasoning</p>
+               
+                <p class="btn-link"> Civil Education</p>
+                <p class="btn-link"> PHE</p>
+                <p class="btn-link"> Music</p>
+                <p class="btn-link"> Basic Science</p>
+                <p class="btn-link"> Social studies</p>
+                <p class="btn-link"> Poem</p>
+                <p class="btn-link"> Creative Arts</p>
+              </div>
+              <div id="b5" class="containerTab" style="display:none;background:#e0e0d1">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Basic 5</h2>
+                  <p class="btn-link">English</p>
+                  <p class="btn-link"> Math</p>
+                  <p class="btn-link"> Verbal Reasoning</p>
+                  <p class="btn-link">Learn Programming (Scratch)</p>
+                  <p class="btn-link"> Poem</p>
+                  <p class="btn-link"> Creative Arts</p>
+                  <p class="btn-link"> Basic Science</p>
+                  <p class="btn-link"> Social studies</p>
+                  <p class="btn-link"> Civil Education</p>
+                  <p class="btn-link"> PHE</p>
+                  <p class="btn-link"> Music</p>
+              </div>
+              
+             
+        </div>
+       
+            
+     
+
+ 
+
+
+
+
+        <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+          <script>
+              function openTab(tabName) {
+                var i, x;
+                x = document.getElementsByClassName("containerTab");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                document.getElementById(tabName).style.display = "block";
+              }
+              </script>
+    </body>
+</html>
